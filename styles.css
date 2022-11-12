@@ -1,0 +1,20 @@
+<style>
+
+body {
+color: white;
+background-color: black;
+}
+
+h1 {
+font-size: 20px
+}
+
+p {
+color:green;
+font-size: 12px
+}
+
+
+ul {
+list-style-type:square
+}
