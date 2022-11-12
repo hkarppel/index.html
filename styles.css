@@ -16,5 +16,11 @@ font-size: 12px
 
 
 ul {
-list-style-type:square
+list-style-type: square
 }
+
+ol {
+list-style-type: lower-alpha
+}
+
+</style>
