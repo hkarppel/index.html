@@ -1,9 +1,6 @@
 <style>
 
-body {
-ackground-color: #000000;
-color: #FFFFFF
-}
+body 
 
 h1 {
 font-size: 20px
@@ -14,6 +11,10 @@ color:green;
 font-size: 12px
 }
 
+{
+background-color: #000000;
+color: #FFFFFF;
+}
 
 ul {
 list-style-type: square
