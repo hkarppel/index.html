@@ -21,11 +21,11 @@ ol {
 list-style-type: lower-alpha
 }
 
-.container {
-  width: 200px;
-  height: 100px;
-  background-color: blue;
-  border-color:yellow;
+container {
+width: 200px;
+height: 100px;
+background-color: blue;
+border-color:yellow;
 }
 
 </style>
