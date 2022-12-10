@@ -1,23 +1,106 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Hannan sivu</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+<title>Hannan sivut</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Style the header */
+header {
+  background-color: lightgreen;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
-
 <body>
-<h1>Otsikkokin löytyy toiselle sivulle</h1>
 
-<p>toinen sivu täällä jotain tekstiä ja juttua</p>
-<p>juttua riittää nähtävästi enemmänkin</p>
- 
-<img src="signen kuva etutöölöstä .png" rel=assets alt= "vanha kuva" height="240" width="320"/>
+<section>
+  <nav>
+    <ul>
+      <p><a href="index.html">Kotisivulle</a></p>
+      <p><a href="kolmas.html">Freyasta</a></p>
+    </ul>
+  </nav>
+  
+  <article>
+    <<h2>Eurooppalaiset kissat</h2>
+    <p> Kissat ovat suosittuja kotieläimiä. Yksi kissarotu on eurooppalaiset kissat.
+	Eurooppalaiset kissat perustuvat Wikipedian mukaan alkuperäiseen kissakantaan.
+	Eurooppalaiset kissat eivät ole sama asia kuin maatiaiskissat, vaikka niissä paljon
+	samaa onkin.</p>
+	<p></p>
+    <p></p>
+	<p></p>
+<img src="Freya ylösalaisin.png" rel=assets alt= "Freya kissa katsoo maailmaa eri näkövinkkeloistä" height="140" width="200"/>
  <p></p>
  <p></p>
- 
+ <p></p>
+ <p></p>
+  </article>
+</section>
 
-<a href="index.html">Tästä takaisin pääsivulle</a>
+<footer>
+  <p>"Kissan ilo hiiren itku." </p>
+  <p>- Suomalainen sananlasku </p>
+ 
+</footer>
 
 </body>
 </html>
