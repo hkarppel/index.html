@@ -1,37 +1,100 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Hannan sivu</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+<title>Hannan sivut</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: lightblue;
+  font-family: Arial;
+}
+
+/* Style the header */
+header {
+  background-color: lightgreen;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 </head>
-
 <body>
-<h1>H1 Yläotsikko</h1>
 
-<p>ensimmäinen kappale tässä jotain tekstiä</p>
-<p>toinen kappale</p>
-
-<ol>
- <li>Ensimmäinen asia listalla</li>
- <li>Toinen asia listalla</li>
-</ol>
-
-<ul>
- <li>Ensimmäinen nosto</li>
- <li>Toinen nosto </li>
-</ul>
-
+<section>
+  <nav>
+    <ul>
+      <p><a href="toinen.html">Kissoista yleisesti</a></p>
+      <p><a href="kolmas.html">Freyasta</a></p>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Tervetuloa kissasivustolle</h1>
+    <p>Täältä löydät tietoa kissoista yleisesti ja enemmän yhdestä kissasta</p>
+	
 
 
+<img src="Freya nukkuu.png" rel=assets alt= "Freya kissa nukkumassa" height="240" width="320"/>
+ 
+  </article>
+</section>
 
-  <p><a href="toinen.html">Linkki toiselle sivulle</a></p>
-  <p><a href="kolmas.html">Linkki jaotetulle sivulle</a></p>
+<footer>
+  <p>"Kissan ilo hiiren itku." </p>
+  <p>- Suomalainen sananlasku </p>
+ 
+</footer>
 
 </body>
 </html>
