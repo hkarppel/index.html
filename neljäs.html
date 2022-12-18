@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hannan kissasivut</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Style the header */
+header {
+  background-color: #90EE90;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #AFE1AF;
+  padding: 30px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 70%;
+  background-color: #50C878;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #9FE2BF;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<section>
+  <nav>
+    <ul>
+	 <p><a href="index.html">Kotisivulle</a></p>
+      <p><a href="toinen.html">Kissoista yleisesti</a></p>
+      <p><a href="kolmas.html">Freyasta</a></p>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Linkkejä kissa-aiheisille sivuile</h1>
+    <p></p>
+	  <p><a href="https://fi.wikipedia.org/wiki/Kissa">Wikipedian sivu kissoista</a></p>
+	  <p><a href="https://www.elaintieto.fi/kissa/">Eläinten hyvinvointikeskus EHK, tietoja kissoista</a></p>
+      <p><a href="https://www.purina.fi/kaikki-kissoista/kissa-kayttaytyminen-koulutus/kissan-k%C3%A4ytt%C3%A4ytymisen-ymm%C3%A4rt%C3%A4minen/kissa-vesi-kysymyksia">Purinan kissatietoutta</a></p>
+</div>	  
+ <p></p> 
+ <p></p>
+ <p></p>
+ 
+  </article>
+</section>
+
+<footer>
+  <p>"Kissan ilo hiiren itku." </p>
+  <p>- Suomalainen sananlasku </p>
+ 
+</footer>
+
+</body>
+</html>
